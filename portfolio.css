@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth; /* This makes the page scroll smoothly when a link is clicked */
+}
+
 /*-----Title Adjustments-----*/
 .my-title   {
     font-family: URW Chancery L, cursive, fantasy;
@@ -5,9 +9,16 @@
 
 /***** GENERAL STYLING *****/
 /* Body */
-body {
+body {    
     margin: 0%  /* This ensures our site displays all the way to the edge of the browser screen */
+   
 }
+
+body.fade-out {
+    opacity: 0; /* This makes the opacity of the body 0, which makes it invisible */
+    transition: none; /* This makes the opacity transition last 0 seconds */
+}
+
 
 /* Heading 1 elements */
 h1 {

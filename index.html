@@ -10,7 +10,7 @@
     </head>
 
     <!--Body-->
-    <body class="Background">
+    <body class="Background">        
         
         <!--Navbar-->
         <div class="Navbar">
@@ -94,16 +94,17 @@
                 <a href="https://github.com/JamTerp79" target="_blank"><img src="./images/Self_Portrait.jpg" alt="Contact_Image">
             </div>
             <!--Contact form, right column-->
-            <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
-                <!--This specifies where and how to send the form data; we are leaving it blank-->
+            <div class="Column_1 Column_tall">                
+                <h1>Contact</h1> <!--This specifies where and how to send the form data; we are leaving it blank-->
                 <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
                     <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
+                        <input type="text" placeholder="Please enter your name here" required>
                     <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here" required>
                     <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here" required>
+                    <label>Phone Number:</label>
+                        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Please write your Phone Number here" required>
                         <input type="submit" value="SUBMIT">
                 </form>
             </div>
